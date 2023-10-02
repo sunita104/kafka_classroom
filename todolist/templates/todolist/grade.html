@@ -1,0 +1,40 @@
+{% extends 'todolist/components/base.html' %}
+{% block content %}
+<body class="bg-gray-100">
+    <header class="bg-blue-500 py-4">
+        <div class="container mx-auto text-white text-center">
+            <h1 class="text-2xl font-semibold">Grades</h1>
+        </div>
+    </header>
+
+    <section class="container mx-auto py-8">
+        <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Student Grades</h2>
+            <table class="w-full border-collapse border border-gray-300">
+                <thead>
+                    <tr>
+                        <th class="p-2 border border-gray-300">Student Name</th>
+                        <th class="p-2 border border-gray-300">Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-2 border border-gray-300">Student 1</td>
+                        <td class="p-2 border border-gray-300">A</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 border border-gray-300">Student 2</td>
+                        <td class="p-2 border border-gray-300">B</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 border border-gray-300">Student 3</td>
+                        <td class="p-2 border border-gray-300">C</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+{% endblock %}
+
+

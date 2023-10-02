@@ -1,0 +1,21 @@
+{% extends 'todolist/components/base.html' %}
+{% block content %}
+<body class="bg-gray-100">
+
+    <section class="container mx-auto py-8">
+        <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Classroom Members</h2>
+            <ul>
+                {% for student in students %}
+                <li class="mb-2">{{ student.first_name }} {{ student.last_name }} - {{ student.email }}</li>
+                {% empty %}
+                <li class="mb-2">No students available.</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</body>
+
+{% endblock %}
+
+
